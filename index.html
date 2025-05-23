@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Redemprender</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <style>
+      .custom-card {
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+      }
+    
+      .custom-card:hover {
+        box-shadow: 0 10px 25px rgba(13, 110, 253, 0.3); /* azul Bootstrap */
+        transform: translateY(-5px);
+      }
+
+      .card-img-top {
+    height: 180px; /* or whatever height you prefer */
+    object-fit: cover; /* ensures images cover the space without distortion */
+    width: 100%; /* makes sure width fills container */
+}
+
+.no-style-link {
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    
+  </head>
+
+<body>
+    
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #003366">
+
+    <div class="container-fluid">
+      <nav class="navbar bg-body-dark" data-bs-theme="dark"> <!-- aquì le quite la cajita blanca donde estaba metido el logo -->
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo-no-background.png" alt="Bootstrap" width="110px" height="120px" class="d-inline-block align-text-top" style="margin-right: 10px;">
+            
+          </a>
+        </div>
+      </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quienes-somos.html">¿Quiénes somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="recursos.html">Recursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="talleres.html">Eventos y Talleres</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a> -->
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav> <!-- end of nav bar -->
+
+  <!-- start of carousel  -->
+
+  <div class="container my-4"> <!-- container para el carousel separado del container principa para que la imagen no se expanda de lado a lado-->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+
+   
+    
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/img-crop.PNG" class="d-block w-100 img-fluid" alt="img-1" style="background-position: center center; background-size: cover; max-height: 600px;" >
+        <div class="carousel-caption d-none d-md-block">
+          <div class="bg-dark bg-opacity-50 p-3 rounded">
+            <h1 class="display-5 fw-bold">Redemprender</h1>
+            <p class="lead">Descubre herramientas, talleres y acompañamiento en nuestra Red Comunitaria de Aprendizaje.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/img-2 redu.JPG" class="d-block w-100" alt="..." style="background-position: center center; background-size: cover; max-height: 600px;">
+        <div class="carousel-caption d-none d-md-block">
+          <div class="bg-dark bg-opacity-50 p-3 rounded">
+            <h1 class="display-5 fw-bold">Conecta con ideas, aprende con la comunidad</h1>
+            <p class="lead">Participa en talleres y comparte tu experiencia para construir un futuro sostenible juntos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/img3-redu.JPG" class="d-block w-100" alt="..." style="background-position: center center; background-size: cover; max-height: 600px;">
+        <div class="carousel-caption d-none d-md-block">
+          <div class="bg-dark bg-opacity-50 p-3 rounded">
+            <h1 class="display-5 fw-bold">Aprende, crea y transforma tu entorno</h1>
+            <p class="lead">Explora recursos gratuitos y comienza tu camino emprendedor con el apoyo de una red colaborativa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+  </div>
+  <!-- end of carousel  -->
+  <div class="container mt-5">
+    <h2 class="text-center">¿Qué es Redemprender?</h2>
+    <p class="text-center">Redemprender es una comunidad de aprendizaje que busca empoderar a emprendedores y emprendedoras a través de recursos, talleres y acompañamiento. Nuestro objetivo es fomentar el desarrollo sostenible y la colaboración entre los miembros de la red.</p>
+  </div>
+
+  <h1 class="text-center mt-5">Conecta, Aprende y Emprende</h1>
+
+  <!-- CARDS INICIO -->
+  <!-- card 1 -->
+  <div class="container mt-4 text-center"> 
+    <div class="row"> 
+                  <div class="col-12 col-md-6 col-lg-3 col-xxl-3">
+                      <div class="card custom-card m-auto mb-3" style="width: 16rem;">  <!-- LA CLASE CUSTOM-CARD JUNTO CON LA ETIQUETA STYLE UBICADA EN EL <HEAD> ME DAN EL EFECTO HOOVER Y EL BOXSHADOW -->
+                          <img src="./images/quienes-somos1.JPG" class="card-img-top img-fluid" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">¿Quiénes somos?</h5>
+                            <p class="card-text">Conoce el propósito, el equipo y los valores que impulsan nuestra red de aprendizaje.</p>
+                            <a href="quienes-somos.html" class="btn btn-primary">Descubrir</a>
+                          </div>
+                        </div>
+                        </div>
+                  
+
+              <!-- card 2 -->
+                  <div class="col-12 col-md-6 col-lg-3 col-xxl-3">
+                      <div class="card custom-card m-auto mb-3" style="width: 16rem;">
+                          <img src="./images/recursos5.JPG" class="card-img-top img-fluid" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Recursos</h5>
+                            <p class="card-text">Accede a herramientas, guías y materiales para fortalecer tu emprendimiento.</p>
+                            <a href="recursos.html" class="btn btn-primary">Explorar</a>
+                          </div>
+                        </div>
+                        </div>
+                  
+
+              <!-- card 3 -->
+                  <div class="col-12 col-md-6 col-lg-3 col-xxl-3">
+                      <div class="card custom-card m-auto mb-3" style="width: 16rem;">
+                          <img src="./images/talleres.jpg" class="card-img-top img-fluid" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Eventos y Talleres</h5>
+                            <p class="card-text">Participa en actividades prácticas para aprender y crecer en comunidad.</p>
+                            <a href="talleres.html" class="btn btn-primary">Ver más</a>
+                          </div>
+                        </div>
+                  </div>
+
+            <!-- card 4 -->
+            <div class="col-12 col-md-6 col-lg-3 col-xxl-3">
+                    <div class="card custom-card m-auto" style="width: 16rem;"> <!-- 16rm debe ser utilizado -->
+                        <img src="./images/contacto.jpeg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Contacto</h5>
+                            <p class="card-text">¿Tienes dudas o sugerencias? Escríbenos y con gusto te responderemos.</p>
+                            <a href="contacto.html" class="btn btn-primary">Escribir mensaje</a>
+                          </div>
+                        </div>
+                  </div>
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+
+    <!--Inicio footer -->
+    <footer class="bg-dark text-white">
+      <div class="container text-center mt-5 p-4">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-4 col-xxl-4">
+            <a href="contacto.html" class="no-style-link"><h4>Contáctanos</h4> </a>
+            <p>¿Tienes dudas? Haz click en Contàctanos chatea con nosotros por Whatsapp.</p>
+            <a href="https://wa.me/573145664397" target="_blank"> <i class="fa-brands fa-whatsapp me-2" style="color: #25d366; font-size: 42px;"></i></a>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-xxl-4">
+            <h4>información</h4>
+            <p>Este es un sitio sin ànimo de lucro.Nuestro objetivo es brindar apoyo e informacion ùtil a emprendedores y a la comunidad en general</p>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-xxl-4">
+            <h4>Síguenos</h4>
+            <p>Conèctate con nosotros en redes sociales para estar al tanto de noticias, talleres y recursos actualizados.</p>
+          
+            <i class="fa-brands fa-facebook me-2" style="color: #0232f2; font-size: 40px;"></i>
+            <i class="bi bi-instagram me-2" style="color: #e1306c; font-size: 40px;"></i>
+            <i class="bi bi-twitter-x me-2" style="font-size: 40px;"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
